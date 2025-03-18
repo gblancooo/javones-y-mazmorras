@@ -1,0 +1,22 @@
+package dragones_y_mazmorras;
+
+import java.util.ArrayList;
+
+public class Inventario extends Equipamiento {
+	
+	private ArrayList<Equipamiento> Inventario = new ArrayList<Equipamiento>();
+
+	public Inventario(String nombre, String tipo) {
+		super(nombre, tipo);
+		this.Inventario = new ArrayList<>();
+	}
+
+
+	
+	
+	public void agregarEquipamiento() {
+		
+	}
+	
+	
+}
