@@ -23,14 +23,9 @@ public class Inventario {
 	
 	public void mostrarInventario(Equipamiento equipamiento) {
 		
-		if(equipamientos.isEmpty()) {
-			System.out.println("El inventario esta vacio");
-		}
-		else {
-			for(Equipamiento i: equipamientos) {
-				System.out.println("Objeto 1: " + i.getNombre() + " Tipo: " + i.getTipo());
-				
-			}
+		for(Equipamiento i: equipamientos) {
+			System.out.println("Objeto 1: " + i.getNombre() + " Tipo: " + i.getTipo());
+			
 		}
 		
 		
