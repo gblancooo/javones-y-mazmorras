@@ -1,6 +1,6 @@
 package dragones_y_mazmorras;
 
-public class Equipamiento {
+public abstract class Equipamiento {
 
 	private String nombre;
 	private String tipo;

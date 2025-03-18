@@ -7,7 +7,7 @@ public class Inventario {
 	
 	private ArrayList<Equipamiento> equipamientos;
 	
-	public Inventario() {
+	public Inventario(String nombre, String tipo) {
 		
 		this.equipamientos = new ArrayList<>();
 	}
@@ -21,7 +21,7 @@ public class Inventario {
 		
 	}
 	
-	public void mostrarInventario() {
+	public void mostrarInventario(Equipamiento equipamiento) {
 		
 		if(equipamientos.isEmpty()) {
 			System.out.println("El inventario esta vacio");

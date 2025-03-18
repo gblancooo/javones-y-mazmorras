@@ -21,7 +21,7 @@ public class Inventario {
 		
 	}
 	
-	public void mostrarInventario() {
+	public void mostrarInventario(Equipamiento equipamiento) {
 		
 		if(equipamientos.isEmpty()) {
 			System.out.println("El inventario esta vacio");

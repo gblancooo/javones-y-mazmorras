@@ -1,0 +1,17 @@
+package dragones_y_mazmorras;
+
+public abstract class Personaje {
+
+	private String nombre;
+	private int nivel;
+	private int puntosVida;
+	private Inventario inventario;
+
+    public Personaje(String nombre, int nivel, int puntosVida) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.puntosVida = puntosVida;
+        this.inventario = new Inventario(); // Se inicializa el inventario vacío
+    }
+	
+}

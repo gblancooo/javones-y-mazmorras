@@ -1,5 +1,39 @@
 package dragones_y_mazmorras;
 
-public class Personaje {
+public abstract class Personaje {
 
+	private String nombre;
+	private int nivel;
+	private int puntosVida;
+	
+	private Inventario inventario;
+	
+
+    public Personaje(String nombre, int nivel, int puntosVida) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.puntosVida = puntosVida;
+        this.inventario = new Inventario(); 
+        }
+    
+	
+    
+    
+    public void mostrarInfo() {
+    	System.out.println("Nombre: " + this.nombre +
+    						"Nivel: " + this.nivel + 
+    						"puntosVida: " + this.puntosVida);
+    }
+    
+    public void bajarVida(int vida) {
+    	
+    	
+    	
+    }
+    
+    public void getInventario() {
+    	
+    	inventario.mostrarInventario();
+    }
+    
 }
