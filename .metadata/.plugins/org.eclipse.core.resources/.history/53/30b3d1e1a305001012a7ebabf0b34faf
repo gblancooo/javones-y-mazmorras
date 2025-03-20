@@ -61,11 +61,7 @@ public class Mago extends Personaje{
     	    
     public void FireBall(int manaNecesario) {
     	if (puntosMana > manaNecesario) {
-    		
-    		System.out.println("Lanzando Bola de Fuego!!! \n Mana restante :" + this.puntosMana);
-    	
-    	}else if (puntosMana < manaNecesario){
-    		System.out.println("Mana insuficiente...");
+    		System.out.println("Lanzando ");
     	}
     }       
 }
