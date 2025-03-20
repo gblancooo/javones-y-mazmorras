@@ -4,12 +4,12 @@ package dragones_y_mazmorras;
 	public class Guerrero extends Personaje {
 		
 		private boolean protegiendo;
-		private Personaje compañeroProtegido;
+		private boolean compañeroProtegido;
 		
-	    public Guerrero(String nombre, int nivel, int puntosVida) {
+	    public Guerrero(String nombre, int nivel, int puntosVida, boolean protegiendo, boolean compañeroProtegido) {
 			super(nombre, nivel, puntosVida);
-			this.protegiendo = false;
-			this.compañeroProtegido = null;
+			this.setProtegiendo(protegiendo);
+			this.setCompañeroProtegido(compañeroProtegido);
 			
 		}
 
@@ -21,24 +21,15 @@ package dragones_y_mazmorras;
 			this.protegiendo = protegiendo;
 		}
 
-		public Personaje isCompañeroProtegido() {
+		public boolean isCompañeroProtegido() {
 			return compañeroProtegido;
 		}
 
-		public void setCompañeroProtegido(Personaje compañeroProtegido) {
+		public void setCompañeroProtegido(boolean compañeroProtegido) {
 			this.compañeroProtegido = compañeroProtegido;
 		}
 
 		public void proteger(Personaje compañero) {
-		
-			if (this.protegiendo) {
-				System.out.println("El guerrero ya esta proteguiendo a alguien.");
-			} else { 
-				this.protegiendo = true;
-				this.compañeroProtegido = compañero;
-				System.out.println("El Guerrero esta protegiendo a" + compañero);
-			}
-		
 		}
 		
 		
