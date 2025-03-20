@@ -18,13 +18,5 @@ public class Ladron extends Personaje{
 		this.invisble = invisble;
 	}
 	
-	public void HacerseInvisible() {
-		if(this.invisble){ 
-			this.invisble = false;
-			
-		}else {
-			this.invisble = true;
-		}
-		
-	}
+	
 }
