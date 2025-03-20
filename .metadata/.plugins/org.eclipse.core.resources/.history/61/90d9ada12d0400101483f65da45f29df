@@ -36,10 +36,4 @@ public abstract class Personaje {
     	inventario.mostrarInventario();
     }
     
-    public void agregarEquipamiento() {
-    	
-    }
-    
-    
-    
 }
