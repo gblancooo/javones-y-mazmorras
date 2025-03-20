@@ -224,3 +224,47 @@ Binding(ALT+SHIFT+R,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.p2.director 2 10054 2025-03-20 15:25:30.150
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.151
+!MESSAGE Software being installed: artificial_root 1.0.0.v1742480729062
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-03-20 15:25:30.151
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.151
+!MESSAGE Java implementation of Git - GPG support using BouncyCastle 6.3.0.202209071007-r (org.eclipse.jgit.gpg.bc.feature.jar 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.151
+!MESSAGE Java implementation of Git - GPG support using BouncyCastle 7.1.0.202411261347-r (org.eclipse.jgit.gpg.bc.feature.jar 7.1.0.202411261347-r)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-03-20 15:25:30.151
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.151
+!MESSAGE From: artificial_root 1.0.0.v1742480729062
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.151
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.egit.feature.group 0.0.0
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-03-20 15:25:30.151
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.155
+!MESSAGE From: artificial_root 1.0.0.v1742480729062
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.155
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.gpg.bc.feature.group 7.1.0.202411261347-r
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-03-20 15:25:30.155
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.155
+!MESSAGE From: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.155
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.gpg.bc.feature.group [6.3.0,6.4.0)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-03-20 15:25:30.155
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.155
+!MESSAGE From: Java implementation of Git - GPG support using BouncyCastle 6.3.0.202209071007-r (org.eclipse.jgit.gpg.bc.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.155
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.gpg.bc.feature.jar [6.3.0.202209071007-r,6.3.0.202209071007-r]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2025-03-20 15:25:30.155
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.155
+!MESSAGE From: Java implementation of Git - GPG support using BouncyCastle 7.1.0.202411261347-r (org.eclipse.jgit.gpg.bc.feature.group 7.1.0.202411261347-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-03-20 15:25:30.155
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.gpg.bc.feature.jar [7.1.0.202411261347-r,7.1.0.202411261347-r]
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2025-03-20 15:25:30.188
+!MESSAGE Setup tasks were performed during startup. See 'C:\Users\alumnat\eclipse\java-2022-09\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
