@@ -54,14 +54,14 @@ public class Mago extends Personaje{
     	this.inventario.agregarEquipamiento(equipamiento);
     }
     
-    public void recargarMana(int cantidadMana) {
+    	 public void recargarMana(int cantidadMana) {
     	        this.puntosMana = cantidadMana;
     	        System.out.println("Mana recargado. Mana actual: " + this.puntosMana);
     	    }
     	    
-    public void FireBall(int manaNecesario) {
-    	if (puntosMana > manaNecesario) {
-    		System.out.println("Lanzando ");
-    	}
-    }       
+    	    
+    
+    
+    
+    
 }
