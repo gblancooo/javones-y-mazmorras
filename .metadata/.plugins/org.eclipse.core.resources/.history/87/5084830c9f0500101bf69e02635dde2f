@@ -25,15 +25,6 @@ public class Ladron extends Personaje{
 		}else {
 			this.invisble = true;
 		}
-	}
-	public void estaInvisible() {
-		if(this.invisble = true) {
-			System.out.println("estas invisible");
-			
-		}else {
-			System.out.println("No estas invisible tonto");
-		}
-	
+		
 	}
 }
-
