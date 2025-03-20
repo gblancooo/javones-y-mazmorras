@@ -5,7 +5,6 @@ package dragones_y_mazmorras;
 		
 		private boolean protegiendo;
 		private Personaje compañeroProtegido;
-		private int dañoEcho;
 		
 	    public Guerrero(String nombre, int nivel, int puntosVida) {
 			super(nombre, nivel, puntosVida);
@@ -56,11 +55,7 @@ package dragones_y_mazmorras;
 		
 		
 		public void bajarVida(int vida) {
-			if (this.protegiendo && compañeroProtegido != null) {
-				int dañoEcho = vida / 2;
-				compañeroProtegido.bajarVida(dañoEcho);
-				System.out.println("El daño se ha dividido entre el Guerrero y" + compañeroProtegido);
-			}
+		
 		
 		
 		

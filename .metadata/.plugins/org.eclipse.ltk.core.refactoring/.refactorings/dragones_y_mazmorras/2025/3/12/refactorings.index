@@ -2,3 +2,4 @@
 1742321439510	Encapsulate field 'Equipamiento'
 1742484560584	Encapsulate field 'protegiendo, ...'
 1742484568143	Encapsulate field 'compañeroProtegido, ...'
+1742486662379	Convert local variable 'dañoEcho' to field
