@@ -1,5 +1,12 @@
 package dragones_y_mazmorras;
 
-public class Ladron {
-ei
+public class Ladron extends Personaje{
+	
+	boolean invisble = false;
+	 
+	public Ladron(String nombre, int nivel, int puntosVida, boolean invisible) {
+		 super(nombre, nivel, puntosVida);
+		 this.invisble = invisible;
+	 }
+	
 }
