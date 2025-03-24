@@ -47,6 +47,24 @@ public class Main {
         mago1.mostrarInfo();
         ladron1.mostrarInfo();
 			
+
+          Equipamiento espada = new Equipamiento("Espada", "Arma");
+          guerrero1.agregarEquipamiento(espada);
+  
+          System.out.println("Estado inicial de los inventarios ");
+          System.out.println("Inventario del Guerrero:");
+          guerrero1.getInventario();
+          System.out.println("Inventario del Ladrón:");
+          ladron1.getInventario();
+  
+          System.out.println("El Ladrón intenta robar al Guerrero ");
+          ladron1.robarObjeto(guerrero1);
+  
+          System.out.println(" Estado final de los inventarios ");
+          System.out.println("Inventario del Guerrero:");
+          guerrero1.getInventario();
+          System.out.println("Inventario del Ladrón:");
+          ladron1.getInventario();
 	
 		
 
