@@ -1,0 +1,64 @@
+package dragones_y_mazmorras;
+
+import java.util.Random;
+
+public class Mago extends Personaje{
+
+	private String nombre;
+	private int nivel;
+	private int puntosVida;
+	private int puntosMana;
+	private Inventario inventario;
+	
+	 public Mago(String nombre, int nivel, int puntosVida, int mana) {
+	        super(nombre, nivel, puntosVida); //varibales de persnaje
+	        this.puntosMana = mana;
+	        this.inventario = new Inventario();
+        }
+	
+    public void mostrarInfo() {
+    	System.out.println("Nombre: " + this.nombre +
+    						"Nivel: " + this.nivel + 
+    						"puntosVida: " + this.puntosVida+
+    						"Mana: " + puntosMana);
+    }
+    
+    public void bajarVida(int vida) {
+    	
+    	Random rand = new Random();
+
+ 	   int upperbound = 25; 
+ 	   
+ 	   int daño = rand.nextInt(upperbound);
+ 	   
+ 	   this.puntosVida = daño;
+ 	   
+ 	   System.out.println("Se a echo un total de: " + daño + " Vida actual: " + this.puntosVida  );
+ 	   
+    }
+    
+    public void getInventario() {
+    	
+    	this.inventario.mostrarInventario(); 
+    }
+    
+    public void agregarEquipamiento(Equipamiento equipamiento) {
+    	
+    	this.inventario.agregarEquipamiento(equipamiento);
+    }
+    
+    public void recargarMana(int ManaRecarga) {
+        this.puntosMana += ManaRecarga + 25;
+        System.out.println("Mana recargado. Mana actual: " + this.puntosMana);
+    }
+    	    
+    public void FireBall(int manaNecesario) {
+    	if (puntosMana > manaNecesario) {
+    		
+    		System.out.println("Lanzando Bola de Fuego!!! \n Mana restante :" + this.puntosMana);
+    	
+    	}else if (puntosMana < manaNecesario){
+    		System.out.println("Mana insuficiente...");
+    	}
+    }       
+}

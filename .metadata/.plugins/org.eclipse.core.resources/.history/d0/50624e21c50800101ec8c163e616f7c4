@@ -1,0 +1,39 @@
+package dragones_y_mazmorras;
+
+import java.util.Random;
+
+public class Mago extends Personaje{
+
+	
+	private int puntosMana;
+	
+	 public Mago(String nombre, int nivel, int puntosVida, int puntosMana, Inventario inventario) {
+		 	super(nombre, nivel, puntosVida, inventario);
+	        this.puntosMana = puntosMana;
+	        
+        }
+	
+   
+    
+   
+    public void mostrarInfo() {
+    	
+    	mostrarInfo(); System.out.println(" Mana:  " + this.puntosMana);
+    	
+    }
+	 
+   public void recargarMana(int ManaRecarga) {
+        this.puntosMana += ManaRecarga + 25;
+        System.out.println("Mana recargado. Mana actual: " + this.puntosMana);
+    }
+    	    
+    public void FireBall(int manaNecesario) {
+    	if (puntosMana > manaNecesario) {
+    		
+    		System.out.println("Lanzando Bola de Fuego!!! \n Mana restante :" + this.puntosMana);
+    	
+    	}else if (puntosMana < manaNecesario){
+    		System.out.println("Mana insuficiente...");
+    	}
+    }       
+}

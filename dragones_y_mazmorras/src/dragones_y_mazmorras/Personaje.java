@@ -1,6 +1,5 @@
 package dragones_y_mazmorras;
 
-import java.util.Random;
 
 public abstract class Personaje {
 
@@ -11,7 +10,7 @@ public abstract class Personaje {
 	private Inventario inventario;
 	
 
-    public Personaje(String nombre, int nivel, int puntosVida) {
+    public Personaje(String nombre, int nivel, int puntosVida, Inventario inventario ) {
         this.nombre = nombre;
         this.nivel = nivel;
         this.puntosVida = puntosVida;
@@ -21,7 +20,56 @@ public abstract class Personaje {
 	
     
     
-    public void mostrarInfo() {
+    public String getNombre() {
+		return nombre;
+	}
+
+
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+
+
+	public int getNivel() {
+		return nivel;
+	}
+
+
+
+
+	public void setNivel(int nivel) {
+		this.nivel = nivel;
+	}
+
+
+
+
+	public int getPuntosVida() {
+		return puntosVida;
+	}
+
+
+
+
+	public void setPuntosVida(int puntosVida) {
+		this.puntosVida = puntosVida;
+	}
+
+
+
+
+	public void setInventario(Inventario inventario) {
+		this.inventario = inventario;
+	}
+
+
+
+
+	public void mostrarInfo() {
     	System.out.println("Nombre: " + this.nombre +
     						"Nivel: " + this.nivel + 
     						"puntosVida: " + this.puntosVida);
@@ -29,15 +77,10 @@ public abstract class Personaje {
     
     public void bajarVida(int vida) {
     	
-    	Random rand = new Random(); //rand nos permite acceder a los numreos aleatorios
-
- 	   int upperbound = 25; //establece el limite de numeros
+    	
+ 	   this.puntosVida = vida; //genera un numero aleatorio entre 0 i 25(upperbound)
  	   
- 	   int daño = rand.nextInt(upperbound);
- 	   
- 	   this.puntosVida = daño; //genera un numero aleatorio entre 0 i 25(upperbound)
- 	   
- 	   System.out.println("Se a echo un total de: " + daño + " Vida actual: " + this.puntosVida  );
+ 	   System.out.println("Se a echo un total de: " + vida + " Vida actual: " + this.puntosVida  );
  	   
     }
     

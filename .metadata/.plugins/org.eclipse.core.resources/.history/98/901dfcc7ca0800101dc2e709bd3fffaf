@@ -1,0 +1,49 @@
+package dragones_y_mazmorras;
+
+import java.util.ArrayList;
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Personaje> Personajes = new ArrayList<Personaje>();
+		
+		
+		Inventario guerreroInventario = new Inventario();
+		Guerrero Guerrero1 = new Guerrero("Guerrero1", 1, 100, guerreroInventario, false, null, false);
+		Personajes.add(Guerrero1);
+		
+		Inventario magoInventario = new Inventario();
+		Mago Mago1 = new Mago("Mago1", 1, 100, 100, magoInventario);
+		Personajes.add(Mago1);
+		
+		Inventario ladronInventario = new Inventario();
+		Ladron Ladron1 = new Ladron("Ladron1", 1, 100, ladronInventario, false);
+		Personajes.add(Ladron1);
+	
+		
+		boolean terminar = false;
+		while(terminar) {
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+}

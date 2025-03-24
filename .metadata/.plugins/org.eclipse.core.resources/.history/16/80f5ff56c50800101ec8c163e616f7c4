@@ -1,0 +1,77 @@
+package dragones_y_mazmorras;
+	
+	
+	public class Guerrero extends Personaje {
+		
+		private boolean protegiendo;
+		private Personaje compañeroProtegido;
+		
+		public Guerrero(String nombre, int nivel, int puntosVida, Inventario inventario, boolean proteginedo, Personaje compañeroProtegido) {
+			super(nombre, nivel, puntosVida, inventario);
+			this.protegiendo = false;
+			this.compañeroProtegido = null;
+			
+		}
+
+		public boolean isProtegiendo() {
+			return protegiendo;
+		}
+
+		public void setProtegiendo(boolean protegiendo) {
+			this.protegiendo = protegiendo;
+		}
+
+		public Personaje isCompañeroProtegido() {
+			return compañeroProtegido;
+		}
+
+		public void setCompañeroProtegido(Personaje compañeroProtegido) {
+			this.compañeroProtegido = compañeroProtegido;
+		}
+
+		public void proteger(Personaje compañero) {
+		
+			if (this.protegiendo) {
+				System.out.println("El guerrero ya esta proteguiendo a alguien.");
+			} else { 
+				this.protegiendo = true;
+				this.compañeroProtegido = compañero;
+				System.out.println("El Guerrero esta protegiendo a" + compañero);
+			}
+		
+		}
+		
+		
+		public void dejarDeProteger() {
+			if (this.protegiendo) {
+				System.out.println("El Guerrero ha dejado de proteger a" + compañeroProtegido);
+				this.protegiendo = false;
+				this.compañeroProtegido = null;
+			} else { 
+				System.out.println("El Guerrero no esta protegiendo a nadie.");
+			}
+		
+		}
+		
+		
+		public void bajarVida(int vida) {
+			if (this.protegiendo && compañeroProtegido != null) {
+				int dañoEcho = vida / 2;
+				compañeroProtegido.bajarVida(dañoEcho);
+				System.out.println("El daño se ha dividido entre el Guerrero y" + compañeroProtegido);
+			}
+		
+		
+		
+		}
+				
+		public Guerrero estaProtegiendo() {
+			return (Guerrero) compañeroProtegido;
+			
+		}
+	
+		
+	
+		}
+		
+	
