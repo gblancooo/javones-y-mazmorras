@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 INDEX VERSION 1.134+C:\Users\Joan\Desktop\DAM\Programacio\javones-y-mazmorras\.metadata\.plugins\org.eclipse.jdt.core
 1986458992.index
 513431333.index
+=======
+INDEX VERSION 1.131+F:\DAM\Programacio\javones y mazmorras\javones-y-mazmorras\.metadata\.plugins\org.eclipse.jdt.core
+>>>>>>> Danil
 1865797976.index
