@@ -70,12 +70,6 @@ package dragones_y_mazmorras;
 			
 		}
 	
-		public void mostrarOpciones() {
-			System.out.println("Opciones que puedes hacer:" );
-			System.out.println("1 - Proteger a alguien");
-			System.out.println("2 - Atacar");
-			
-		}
 		
 	
 		}

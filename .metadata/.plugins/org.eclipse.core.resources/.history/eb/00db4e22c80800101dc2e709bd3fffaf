@@ -30,7 +30,7 @@ public class Mago extends Personaje{
 		System.out.println("Opciones que puedes hacer:" );
 		System.out.println("1 - Recargar mana");
 		System.out.println("2 - Lanzar echizo");
-		System.out.println("3 - Atacar");
+		
 	}
    
 }
