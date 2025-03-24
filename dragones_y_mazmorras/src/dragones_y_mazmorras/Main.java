@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Inventario guerreroInventario = new Inventario();
-		Guerrero Guerrero1 = new Guerrero("Guerrero1", 1, 100, guerreroInventario, false, null);
+		Guerrero Guerrero1 = new Guerrero("Guerrero1", 1, 100, guerreroInventario, false, null, false);
 		
 		
 		Inventario magoInventario = new Inventario();
