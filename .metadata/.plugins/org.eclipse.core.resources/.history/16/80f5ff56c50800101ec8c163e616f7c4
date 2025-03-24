@@ -6,10 +6,10 @@ package dragones_y_mazmorras;
 		private boolean protegiendo;
 		private Personaje compañeroProtegido;
 		
-		public Guerrero(String nombre, int nivel, int puntosVida, Inventario inventario, boolean proteginedo, Personaje compañeroProtegido, boolean protegiendo) {
+		public Guerrero(String nombre, int nivel, int puntosVida, Inventario inventario, boolean proteginedo, Personaje compañeroProtegido) {
 			super(nombre, nivel, puntosVida, inventario);
-			this.protegiendo = protegiendo;
-			this.compañeroProtegido = compañeroProtegido;
+			this.protegiendo = false;
+			this.compañeroProtegido = null;
 			
 		}
 
