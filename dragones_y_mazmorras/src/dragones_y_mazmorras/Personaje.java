@@ -1,6 +1,5 @@
 package dragones_y_mazmorras;
 
-import java.util.Random;
 
 public abstract class Personaje {
 
@@ -78,15 +77,10 @@ public abstract class Personaje {
     
     public void bajarVida(int vida) {
     	
-    	Random rand = new Random(); //rand nos permite acceder a los numreos aleatorios
-
- 	   int upperbound = 25; //establece el limite de numeros
+    	
+ 	   this.puntosVida = vida; //genera un numero aleatorio entre 0 i 25(upperbound)
  	   
- 	   int daño = rand.nextInt(upperbound);
- 	   
- 	   this.puntosVida = daño; //genera un numero aleatorio entre 0 i 25(upperbound)
- 	   
- 	   System.out.println("Se a echo un total de: " + daño + " Vida actual: " + this.puntosVida  );
+ 	   System.out.println("Se a echo un total de: " + vida + " Vida actual: " + this.puntosVida  );
  	   
     }
     
