@@ -36,7 +36,7 @@ public class Main {
 			if(opcion == 1) {
 				System.out.println("A quien quieres proteger?");
 				for (int i = 0; i < Personajes.size(); i++) {
-					System.out.println(Personajes.get(i).getNombre());
+					System.out.println(((Personaje) Personajes.get(i)).getNombre());
 				}
 			}
 			
