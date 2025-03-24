@@ -1,7 +1,6 @@
 package dragones_y_mazmorras;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Inventario {
 	
