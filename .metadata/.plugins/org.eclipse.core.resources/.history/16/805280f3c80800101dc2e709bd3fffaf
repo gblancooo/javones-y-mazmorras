@@ -23,16 +23,7 @@ public class Main {
 		Personajes.add(Ladron1);
 	
 		
-		boolean terminar = false;
-		while(terminar) {
-			
-			
-			
-			
-			
-			
-			
-		}
+		
 		
 		
 		

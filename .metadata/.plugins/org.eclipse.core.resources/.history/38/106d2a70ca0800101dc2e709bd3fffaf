@@ -21,56 +21,7 @@ public abstract class Personaje {
 	
     
     
-    public String getNombre() {
-		return nombre;
-	}
-
-
-
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-
-
-
-	public int getNivel() {
-		return nivel;
-	}
-
-
-
-
-	public void setNivel(int nivel) {
-		this.nivel = nivel;
-	}
-
-
-
-
-	public int getPuntosVida() {
-		return puntosVida;
-	}
-
-
-
-
-	public void setPuntosVida(int puntosVida) {
-		this.puntosVida = puntosVida;
-	}
-
-
-
-
-	public void setInventario(Inventario inventario) {
-		this.inventario = inventario;
-	}
-
-
-
-
-	public void mostrarInfo() {
+    public void mostrarInfo() {
     	System.out.println("Nombre: " + this.nombre +
     						"Nivel: " + this.nivel + 
     						"puntosVida: " + this.puntosVida);
