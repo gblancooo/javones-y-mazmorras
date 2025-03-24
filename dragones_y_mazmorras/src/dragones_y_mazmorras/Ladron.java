@@ -6,7 +6,7 @@ public class Ladron extends Personaje{
 	boolean invisble = false;
 	 
 	public Ladron(String nombre, int nivel, int puntosVida,Inventario inventario, boolean invisible) {
-		 super(nombre, nivel, puntosVida, inventario);
+		 super(nombre, nivel, puntosVida);
 		 this.invisble = invisible;
 	 
 	}
@@ -41,6 +41,17 @@ public class Ladron extends Personaje{
 		mostrarInfo(); System.out.print(" invisible: " + this.invisble);
 	}
 
+	public void robarObjeto(Personaje objetivo) {
+        if (objetivo.getInventario().estaVacio()) {
+            System.out.println(objetivo.getNombre() + " no tiene objetos para robar.");
+            return;
+        }
+
+        Equipamiento objetoRobado = objetivo.getInventario().robarEquipamiento(0);
+        this.getInventario().agregarEquipamiento(objetoRobado);
+
+        System.out.println(this.getNombre() + " ha robado " + objetoRobado.getNombre() + " a " + objetivo.getNombre());
+    }
 	
 	
 	public void mostrarOpciones() {
