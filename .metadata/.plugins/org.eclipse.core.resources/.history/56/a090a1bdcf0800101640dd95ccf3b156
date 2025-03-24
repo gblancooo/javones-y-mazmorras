@@ -1,7 +1,5 @@
 package dragones_y_mazmorras;
 
-import java.util.Scanner;
-
 public class Ladron extends Personaje{
 	
 	boolean invisble = false;
@@ -48,13 +46,13 @@ public class Ladron extends Personaje{
 		System.out.println("2 - Robar Objetos");
 		System.out.println("3 - Atacar");
 	}
+	
+	public boolean RobarObjeto() {
+		
+		System.out.println("A quien quieres robar un objeto?");
+		System.out.println("1 - Guerrero");
+		System.out.println("2 - Mago");
+		
+	}
 }
-
-	
-	
-	
-	
-
-
-
 

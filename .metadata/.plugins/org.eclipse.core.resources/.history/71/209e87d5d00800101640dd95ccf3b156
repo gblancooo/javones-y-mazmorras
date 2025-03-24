@@ -48,13 +48,16 @@ public class Ladron extends Personaje{
 		System.out.println("2 - Robar Objetos");
 		System.out.println("3 - Atacar");
 	}
+	
+	public boolean RobarObjeto() {
+
+		Scanner sc = new Scanner(System.in);
+ 
+
+		System.out.println("A quien quieres robar un objeto?(Escribe el numero deseado)");
+		System.out.println("1 - Guerrero");
+		System.out.println("2 - Mago");
+		
+	}
 }
-
-	
-	
-	
-	
-
-
-
 
