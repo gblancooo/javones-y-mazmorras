@@ -6,23 +6,29 @@ public class Mago extends Personaje{
 
 	
 	private int puntosMana;
+	private Inventario inventario;
 	
-	 public Mago(String nombre, int nivel, int puntosVida, int puntosMana, Inventario inventario) {
+	 public Mago(String nombre, int nivel, int puntosVida, int mana, Inventario inventario) {
 		 	super(nombre, nivel, puntosVida, inventario);
-	        this.puntosMana = puntosMana;
-	        
+	        this.puntosMana = mana;
+	        this.inventario = new Inventario();
         }
 	
    
     
    
-    public void mostrarInfo() {
+    
+    public void getInventario() {
     	
-    	mostrarInfo(); System.out.println(" Mana:  " + this.puntosMana);
-    	
+    	this.inventario.mostrarInventario(); 
     }
-	 
-   public void recargarMana(int ManaRecarga) {
+    
+    public void agregarEquipamiento(Equipamiento equipamiento) {
+    	
+    	this.inventario.agregarEquipamiento(equipamiento);
+    }
+    
+    public void recargarMana(int ManaRecarga) {
         this.puntosMana += ManaRecarga + 25;
         System.out.println("Mana recargado. Mana actual: " + this.puntosMana);
     }

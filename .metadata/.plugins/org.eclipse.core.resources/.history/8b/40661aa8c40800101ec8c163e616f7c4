@@ -22,7 +22,17 @@ public class Mago extends Personaje{
     	
     }
 	 
-   public void recargarMana(int ManaRecarga) {
+    public void getInventario() {
+    	
+    	this.inventario.mostrarInventario(); 
+    }
+    
+    public void agregarEquipamiento(Equipamiento equipamiento) {
+    	
+    	this.inventario.agregarEquipamiento(equipamiento);
+    }
+    
+    public void recargarMana(int ManaRecarga) {
         this.puntosMana += ManaRecarga + 25;
         System.out.println("Mana recargado. Mana actual: " + this.puntosMana);
     }

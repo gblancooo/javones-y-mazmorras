@@ -35,9 +35,5 @@ public class Ladron extends Personaje{
 		}
 	
 	}
-	
-	public void mostrarInfo() {
-		mostrarInfo(); System.out.print(" invisible: " + this.invisble);
-	}
 }
 

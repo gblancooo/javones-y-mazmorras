@@ -51,6 +51,13 @@ public abstract class Personaje {
     	this.inventario.agregarEquipamiento(equipamiento);
     	
     }
+
+
+
+
+	public void setInventario(Inventario inventario) {
+		this.inventario = inventario;
+	}
     
     
     

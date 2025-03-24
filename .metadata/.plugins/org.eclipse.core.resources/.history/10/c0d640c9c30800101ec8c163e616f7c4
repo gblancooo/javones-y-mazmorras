@@ -4,8 +4,8 @@ public class Ladron extends Personaje{
 	
 	boolean invisble = false;
 	 
-	public Ladron(String nombre, int nivel, int puntosVida,Inventario inventario, boolean invisible) {
-		 super(nombre, nivel, puntosVida, inventario);
+	public Ladron(String nombre, int nivel, int puntosVida, boolean invisible) {
+		 super(nombre, nivel, puntosVida);
 		 this.invisble = invisible;
 	 
 	}
@@ -34,10 +34,6 @@ public class Ladron extends Personaje{
 			System.out.println("No estas invisible tonto");
 		}
 	
-	}
-	
-	public void mostrarInfo() {
-		mostrarInfo(); System.out.print(" invisible: " + this.invisble);
 	}
 }
 
