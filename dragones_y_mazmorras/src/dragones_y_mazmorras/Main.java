@@ -7,60 +7,62 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		ArrayList<Personaje> Personajes = new ArrayList<Personaje>();
-		
-		
-		Inventario guerreroInventario = new Inventario();
-		Guerrero Guerrero1 = new Guerrero("Guerrero1", 1, 100, guerreroInventario, null, false);
-		Personajes.add(Guerrero1);
-		
-		Inventario magoInventario = new Inventario();
-		Mago Mago1 = new Mago("Mago1", 1, 100, 100, magoInventario);
-		Personajes.add(Mago1);
-		
-		Inventario ladronInventario = new Inventario();
-		Ladron Ladron1 = new Ladron("Ladron1", 1, 100, ladronInventario, false);
-		Personajes.add(Ladron1);
+			
+		ArrayList<Personaje> personajes = new ArrayList<>();
+
+        // Crear inventarios
+        Inventario guerreroInventario = new Inventario();
+        Inventario magoInventario = new Inventario();
+        Inventario ladronInventario = new Inventario();
+
+        // Crear personajes
+        Guerrero guerrero1 = new Guerrero("Guerrero1", 1, 100, guerreroInventario, null, false);
+        Mago mago1 = new Mago("Mago1", 1, 100, 100, magoInventario);
+        Ladron ladron1 = new Ladron("Ladron1", 1, 100, ladronInventario, false);
+
+        // Agregar personajes al ArrayList
+        personajes.add(guerrero1);
+        personajes.add(mago1);
+        personajes.add(ladron1);
+
+        // Usar métodos de los personajes
+        System.out.println("\n--- Información de los personajes ---");
+        guerrero1.mostrarInfo();
+        mago1.mostrarInfo();
+        ladron1.mostrarInfo();
+
+        System.out.println("\n--- Probando habilidades ---");
+
+        // Guerrero protege al Mago
+        guerrero1.proteger(mago1);
+        // El Mago recarga su maná
+        mago1.recargarMana(50);
+        // El Ladrón se hace invisible
+        ladron1.HacerseInvisible();
+        ladron1.estaInvisible();
+
+        System.out.println("\n--- Estado final de los personajes ---");
+        guerrero1.mostrarInfo();
+        mago1.mostrarInfo();
+        ladron1.mostrarInfo();
+
+			
 	
 		
-		boolean terminar = false;
-		int turno = 0;
-		int opcion = 0;
-		while(!terminar) {
-			turno++;
-			System.out.println("Es el turno: " + turno);
+
 			
-			System.out.println("Le toca actual al Guerrero, que quieres hacer?");
-			Guerrero1.mostrarOpciones();
-			
-			if(opcion == 1) {
-				System.out.println("A quien quieres proteger?");
-				for (int i = 0; i < Personajes.size(); i++) {
-					System.out.println(Personajes.get(i).getNombre());
-				}
-			}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-	
-	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 }
+	
+	
+
