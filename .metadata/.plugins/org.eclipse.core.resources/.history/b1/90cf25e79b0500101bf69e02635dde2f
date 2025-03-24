@@ -1,0 +1,12 @@
+package dragones_y_mazmorras;
+
+public class Ladron extends Personaje{
+	
+	 public Ladron(String nombre, int nivel, int puntosVida) {
+	        this.nombre = nombre;
+	        this.nivel = nivel;
+	        this.puntosVida = puntosVida;
+	        this.inventario = new Inventario(); 
+	        }
+	
+}
