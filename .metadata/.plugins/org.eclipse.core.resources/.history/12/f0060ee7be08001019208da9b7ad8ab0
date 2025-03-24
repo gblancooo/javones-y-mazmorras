@@ -33,7 +33,7 @@ public class Mago extends Personaje{
  	   
  	   this.puntosVida = daño;
  	   
- 	   System.out.println("Se a echo un total de: " + daño + "de daño."+" Vida actual: " + this.puntosVida  );
+ 	   System.out.println("Se a echo un total de: " + daño + " Vida actual: " + this.puntosVida  );
  	   
     }
     
