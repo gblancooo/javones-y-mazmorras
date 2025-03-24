@@ -1,6 +1,5 @@
 package dragones_y_mazmorras;
 
-import java.util.Scanner;
 
 public class Ladron extends Personaje{
 	
@@ -41,6 +40,8 @@ public class Ladron extends Personaje{
 	public void mostrarInfo() {
 		mostrarInfo(); System.out.print(" invisible: " + this.invisble);
 	}
+
+	
 	
 	public void mostrarOpciones() {
 		System.out.println("Opciones que puedes hacer:" );
